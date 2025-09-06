@@ -11,10 +11,10 @@ import re
 
 class PKUCourseSelector:
     def __init__(self, username, password):
-        self.username = '2500010771'
-        self.password = '450305jiang'
+        self.username = 'username'
+        self.password = 'password'
         self.session = requests.Session()
-        self.base_url = "https://elective.pku.edu.cn"  # 假设的选课系统地址
+        self.base_url = "https://elective"  # 假设的选课系统地址
         self.is_logged_in = False
         self.refresh_interval = 5  # 默认5秒刷新一次
         self.course_targets = []  # 要抢的课程列表，包含优先级信息
